@@ -15,12 +15,10 @@ class ClassForm extends Component {
     e.preventDefault();
     if (this.state.password === "admin") {
       alert("Welcome " + this.state.email);
-      this.state.email = "";
-      this.state.password = "";
+      this.setState({email:"",password:""});
     } else {
       alert("Password Is Not Correct");
-      this.state.email = "";
-      this.state.password = "";
+      this.setState({email:"",password:""})
     }
   };
   render() {
